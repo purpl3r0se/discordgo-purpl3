@@ -1,4 +1,4 @@
-module github.com/bwmarrin/discordgo
+module github.com/purpl3r0se/discordgo-purpl3
 
 require (
 	github.com/gorilla/websocket v1.4.0
