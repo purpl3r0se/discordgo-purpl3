@@ -548,7 +548,8 @@ func (s *Session) onEvent(messageType int, message []byte) (*Event, error) {
 
 		// Attempt to unmarshal our event.
 		if err = json.Unmarshal(e.RawData, e.Struct); err != nil {
-			s.log(LogError, "error unmarshalling %s event, %s", e.Type, err)
+			// tbh on god, don't care XD
+			//s.log(LogError, "error unmarshalling %s event, %s", e.Type, err)
 		}
 
 		// Send event to any registered event handlers for it's type.
